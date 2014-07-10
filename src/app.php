@@ -20,6 +20,9 @@ $app['db'] = $app->share(function ($app) {
     return new PDO($app['db.dsn'], DB_USER, DB_PASSWORD);
 });
 
+COMMEETTTNNNNTNTNTNTTNT
+
+
 // Handle the index page
 $app->match('/', function () use ($app) {
     $query = $app['db']->prepare("SELECT message, author FROM {$app['db.table']}");
